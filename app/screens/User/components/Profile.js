@@ -3,6 +3,7 @@ import Tooltip from 'react-tooltip';
 import {getUserData} from '../../../utils/github-api'
 import ProfileStat from './ProfileStat'
 
+
 export default class Profile extends Component {
   constructor() {
     super()
@@ -33,6 +34,9 @@ export default class Profile extends Component {
           />
           <h2>{user.name}</h2>
           <h5>{user.login}</h5>
+          <p>{user.bio}</p>
+          <p>{user.location}</p>
+
         </section>
         <section className="stats border-bottom">
           <ProfileStat value={user.followers} label="seguidores" />

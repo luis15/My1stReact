@@ -25,7 +25,7 @@ export default class Home extends Component {
             </div>
           </div>
           <button type="submit" className="btn btn-primary">
-            Go
+            Ir
           </button>
         </form>
       </section>
